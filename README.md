@@ -14,7 +14,7 @@ npm run demo
 npm test
 ```
 
-The demo uses the real pinned `@pingroom/sdk` 0.6.0 with a local mock transport. It previews a change, simulates a lost response after the server commits, and recovers by reading the result. It makes exactly one mocked update request, uses no credentials or network, and removes its temporary files. Installation needs npm access.
+The demo uses the real pinned `@pingroom/sdk` 0.7.1 with a local mock transport. It previews a change, simulates a lost response after the server commits, and recovers by reading the result. It makes exactly one mocked update request, uses no credentials or network, and removes its temporary files. Installation needs npm access.
 
 ## Connect and review a plan
 

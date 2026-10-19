@@ -14,7 +14,7 @@
     "demo": "node src/demo.js",
     "test": "node --test"
   },
-  "dependencies": { "@pingroom/sdk": "0.6.0" },
+  "dependencies": { "@pingroom/sdk": "0.7.1" },
   "license": "MIT",
   "repository": "https://github.com/pingroom/starter-room-blueprint.git"
 }
