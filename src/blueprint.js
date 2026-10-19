@@ -94,8 +94,7 @@ export function planSummary(state) {
 
 async function readRoom(client, code, signal, expectedId) {
   signal?.throwIfAborted();
-  // rooms.get marks notifications read on the server. List resolves the room
-  // without that read-state side effect; feed content is never retained.
+  // Resolve the room from the granted rooms list; feed content is never retained.
   const rooms = await client.rooms.list();
   signal?.throwIfAborted();
   if (!Array.isArray(rooms) || rooms.length > 1000) throw new Error('Unexpected or oversized rooms list.');

@@ -28,7 +28,7 @@ The demo uses the real pinned `@pingroom/sdk` 0.7.1 with a local mock transport.
 npm run apply -- YOUR_64_CHARACTER_PLAN_HASH
 ```
 
-Apply uses the saved batch, not a newly edited manifest. Editing `blueprint.json` requires another plan and a new hash. A plan with no changes performs no update. Planning uses `rooms.list()` and `actions.list()`; it avoids the single-room read endpoint because that endpoint marks notifications read.
+Apply uses the saved batch, not a newly edited manifest. Editing `blueprint.json` requires another plan and a new hash. A plan with no changes performs no update. Planning uses `rooms.list()` and `actions.list()`.
 
 Pairing saves `.pingroom/credentials.json`, ignored by Git. Files use mode `0600` and directories `0700` on POSIX systems; keep these directories private on Windows too. To use a secret store or another granted room, supply **both** `PINGROOM_TOKEN` and `PINGROOM_ROOM`. Any defined environment pair overrides saved credentials; blank or partial overrides are rejected. Room codes are normalized to uppercase.
 
